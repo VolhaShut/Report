@@ -1,0 +1,31 @@
+
+    mixin test(name)
+
+    tr.test(data-toggle='collapse', data-target='.demo')
+        td 1
+
+        td osa
+
+        td
+            button.btn.btn-success.btn-xs
+                i.fa.fa-check Passed
+
+        td time
+
+    tr
+        td.hiddenRow
+            .collapse.demo 2
+
+        td.hiddenRow
+            .collapse.demo test
+
+        td.hiddenRow
+            .collapse.demo
+                button.btn.btn-danger.btn-xs
+                    i.fa.fa-bug Failed
+
+        td.hiddenRow
+            .collapse.demo time
+
+    for name in test
+        +test(name)

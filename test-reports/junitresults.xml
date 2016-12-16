@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="specs\identity\entities\product.spec.js" timestamp="2016-12-16T00:00:56" hostname="localhost" time="1.096" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\identity\entities\product.spec.js.Identity &gt; Entities &gt; Product &gt; " timestamp="2016-12-16T00:00:56" hostname="localhost" time="1.096" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\identity\entities\product.spec.js.Identity &gt; Entities &gt; Product &gt; " name=".many()" time="0.172" />
+ </testsuite>
+ <testsuite name="specs\identity\entities\profile.spec.js" timestamp="2016-12-16T00:00:57" hostname="localhost" time="0.468" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\identity\entities\profile.spec.js.Identity &gt; Entities &gt; Profile &gt; " timestamp="2016-12-16T00:00:57" hostname="localhost" time="0.468" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\identity\entities\profile.spec.js.Identity &gt; Entities &gt; Profile &gt; " name=".many()" time="0.078" />
+  <testcase classname="specs\identity\entities\profile.spec.js.Identity &gt; Entities &gt; Profile &gt; " name=".one()" time="0.094" />
+ </testsuite>
+ <testsuite name="specs\identity\entities\session.spec.js" timestamp="2016-12-16T00:00:58" hostname="localhost" time="0.36" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\identity\entities\session.spec.js.Identity &gt; Entities &gt; Session &gt; " timestamp="2016-12-16T00:00:58" hostname="localhost" time="0.36" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\identity\entities\session.spec.js.Identity &gt; Entities &gt; Session &gt; " name=".many()" time="0.094" />
+ </testsuite>
+ <testsuite name="specs\identity\services\operations.spec.js" timestamp="2016-12-16T00:00:58" hostname="localhost" time="0.531" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " timestamp="2016-12-16T00:00:58" hostname="localhost" time="0.531" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " name="IsAuthentic" time="0.078" />
+  <testcase classname="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " name="Authenticate" time="0.094" />
+  <testcase classname="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " name="CreateSession" time="0.093" />
+  <testcase classname="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " name="ValidateSession" time="0.079" />
+  <testcase classname="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " name="Logout" time="0.078" />
+  <testcase classname="specs\identity\services\operations.spec.js.Identity &gt; Services &gt; Operations &gt; " name="ValidateSession" time="0.109" />
+ </testsuite>
+ <testsuite name="specs\query\features\uiAutocomplition.spec.js" timestamp="2016-12-16T00:00:59" hostname="localhost" time="0.453" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\query\features\uiAutocomplition.spec.js.Query &gt; UI Autocompletion " timestamp="2016-12-16T00:00:59" hostname="localhost" time="0.453" errors="0" tests="2" skipped="0" disabled="0" failures="1">
+  <testcase classname="specs\query\features\uiAutocomplition.spec.js.Query &gt; UI Autocompletion " name="Perform autocompletions operation with $expand=Concepts and get array of ConceptId for UI autocompletion" time="0.328" />
+  <testcase classname="specs\query\features\uiAutocomplition.spec.js.Query &gt; UI Autocompletion " name="Call all Concepts for UI autocompletion" time="0.125">
+   <failure type="exception" message="Failed: HTTP 400 Bad Request"><![CDATA[RequestError: HTTP 400 Bad Request
+    at Error (native)
+    at new error.RequestError (D:\M2GA-MO2-JOB1\node_modules\wk-osa\osa-umd.js:2410:22)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-osa\osa-umd.js:1270:39
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="specs\query\services\parseTree.spec.js" timestamp="2016-12-16T00:00:59" hostname="localhost" time="0.568" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\query\services\parseTree.spec.js.Query &gt; Services &gt; Operations &gt; " timestamp="2016-12-16T00:00:59" hostname="localhost" time="0.568" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\query\services\parseTree.spec.js.Query &gt; Services &gt; Operations &gt; " name="parseTree with query: &quot;short&quot; should return ASTTerm Node for &quot;short&quot;" time="0.271" />
+  <testcase classname="specs\query\services\parseTree.spec.js.Query &gt; Services &gt; Operations &gt; " name="parseTree with query: &quot;AR/CIR 92&quot; should return ASTConcept Node for &quot;AR/CIR 92&quot;" time="0.109" />
+  <testcase classname="specs\query\services\parseTree.spec.js.Query &gt; Services &gt; Operations &gt; " name="parseTree with query: &quot;shelter in Boete&quot; should return ASTTerm Node for &quot;shelter&quot;" time="0.109" />
+  <testcase classname="specs\query\services\parseTree.spec.js.Query &gt; Services &gt; Operations &gt; " name="parseTree with query: &quot;shelter in Boete&quot; should return ASTConcept Node for &quot;Boete&quot;" time="0.079" />
+ </testsuite>
+ <testsuite name="specs\research\features\uiSearch.spec.js" timestamp="2016-12-16T00:01:00" hostname="localhost" time="7.175" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " timestamp="2016-12-16T00:01:00" hostname="localhost" time="7.175" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " name="Execute UI Search With _ts" time="2.666" />
+  <testcase classname="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " name="Execute UI Search Without _ts" time="0.703" />
+  <testcase classname="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " name="Execute DocumentSearchResultItems.one() for items from executed search " time="0.917" />
+  <testcase classname="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " name="Execute UI Search With _ts" time="0.703" />
+  <testcase classname="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " name="Execute UI Search Without _ts" time="0.748" />
+  <testcase classname="specs\research\features\uiSearch.spec.js.Research &gt; UI Search " name="Execute DocumentSearchResultItems.one() for items from executed search " time="1.188" />
+ </testsuite>
+ <testsuite name="specs\research\services\operations.spec.js" timestamp="2016-12-16T00:01:07" hostname="localhost" time="2.184" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\research\services\operations.spec.js.Research &gt; Services &gt; Operations &gt; " timestamp="2016-12-16T00:01:07" hostname="localhost" time="2.184" errors="0" tests="5" skipped="0" disabled="0" failures="2">
+  <testcase classname="specs\research\services\operations.spec.js.Research &gt; Services &gt; Operations &gt; " name="executeSearch" time="0.42" />
+  <testcase classname="specs\research\services\operations.spec.js.Research &gt; Services &gt; Operations &gt; " name="refineSearch" time="0.766" />
+  <testcase classname="specs\research\services\operations.spec.js.Research &gt; Services &gt; Operations &gt; " name="scopedSearch &gt; documentIds" time="0.234" />
+  <testcase classname="specs\research\services\operations.spec.js.Research &gt; Services &gt; Operations &gt; " name="scopedSearch &gt; documentIds &amp; contentTreeNodeIds" time="0.264">
+   <failure type="toBeUndefined" message="Expected undefined not to be undefined."><![CDATA[Error: Expected undefined not to be undefined.
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Expectation.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:588:21)
+    at Expectation.toBeUndefined (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1501:12)
+    at D:\M2GA-MO2-JOB1\specs\research\services\operations.spec.js:76:76
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+  <testcase classname="specs\research\services\operations.spec.js.Research &gt; Services &gt; Operations &gt; " name="scopedSearch &gt; contentTreeNodeIds" time="0.219">
+   <failure type="toBeUndefined" message="Expected undefined not to be undefined."><![CDATA[Error: Expected undefined not to be undefined.
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Expectation.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:588:21)
+    at Expectation.toBeUndefined (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1501:12)
+    at D:\M2GA-MO2-JOB1\specs\research\services\operations.spec.js:90:76
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="specs\personalitem\features\favorites\documents.favorites.spec.js" timestamp="2016-12-16T00:01:09" hostname="localhost" time="1.192" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" timestamp="2016-12-16T00:01:09" hostname="localhost" time="1.192" errors="0" tests="8" skipped="2" disabled="0" failures="0">
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name="Execute Search and get search id" time="0.377" />
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name=".one() with $expand: &quot;Item&quot; and get favorite Items(is exists)" time="0.094" />
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name="Remove all Items(is exists) from Favorites " time="0">
+   <skipped message="this test skipped: there is nothing to remove" />
+  </testcase>
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name=".one() with $expand: &quot;Item&quot; and check that all items deleted" time="0">
+   <skipped message="this test skipped: there is nothing to check" />
+  </testcase>
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name="Save document item to Favorite" time="0.125" />
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name=".one() with $expand: &quot;Item&quot; and get added favorite Item Id" time="0.094" />
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name="Delete document item from Favorite" time="0.11" />
+  <testcase classname="specs\personalitem\features\favorites\documents.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Documents manipulations" name="Check that document item deleted from Favorite" time="0.093" />
+ </testsuite>
+ <testsuite name="specs\personalitem\features\favorites\saveSearch.favorites.spec.js" timestamp="2016-12-16T00:01:10" hostname="localhost" time="1.196" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" timestamp="2016-12-16T00:01:10" hostname="localhost" time="1.196" errors="0" tests="9" skipped="2" disabled="0" failures="0">
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name="Execute Search and get search id" time="0.304" />
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name="Save Search and get saved search id" time="0.109" />
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name=".one() with $expand: &quot;Item&quot; and get favorite Items(is exists)" time="0.109" />
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name="Remove all Items(is exists) from Favorites " time="0">
+   <skipped message="this test skipped: there is nothing to remove" />
+  </testcase>
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name=".one() with $expand: &quot;Item&quot; and check that all items deleted" time="0">
+   <skipped message="this test skipped: there is nothing to remove" />
+  </testcase>
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name="Save search item to Favorite" time="0.11" />
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name=".one() with $expand: &quot;Item&quot; and get added favorite Item Id" time="0.109" />
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name="Delete saved search item from Favorite" time="0.094" />
+  <testcase classname="specs\personalitem\features\favorites\saveSearch.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Saved Search manipulations" name="Check that saved search item deleted from Favorite" time="0.094" />
+ </testsuite>
+ <testsuite name="specs\personalitem\features\favorites\treeNode.favorites.spec.js" timestamp="2016-12-16T00:01:12" hostname="localhost" time="1.925" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" timestamp="2016-12-16T00:01:12" hostname="localhost" time="1.925" errors="0" tests="7" skipped="2" disabled="0" failures="0">
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name=".one() with $expand: &quot;Item&quot; and get favorite Items(is exists)" time="0.11" />
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name="Remove all Items(is exists) from Favorites " time="0">
+   <skipped message="this test skipped: there is nothing to remove" />
+  </testcase>
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name=".one() with $expand: &quot;Item&quot; and check that all items deleted" time="0">
+   <skipped message="this test skipped: there is nothing to check" />
+  </testcase>
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name="Save tree node to Favorite" time="0.687" />
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name=".one() with $expand: &quot;Item&quot; and get added favorite Item Id" time="0.66" />
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name="Delete tree node item from Favorite" time="0.094" />
+  <testcase classname="specs\personalitem\features\favorites\treeNode.favorites.spec.js.Personalitem &gt; Features &gt; Favorites &gt; Tree Node manipulations" name="Check that tree node item deleted from Favorite" time="0.094" />
+ </testsuite>
+ <testsuite name="specs\personalitem\features\folders\folders.spec.js" timestamp="2016-12-16T00:01:14" hostname="localhost" time="13.947" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" timestamp="2016-12-16T00:01:14" hostname="localhost" time="13.947" errors="0" tests="6" skipped="0" disabled="0" failures="2">
+  <testcase classname="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" name="Execute search and create annotations" time="1.014" />
+  <testcase classname="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" name="Execute search and add search results in folder" time="0.545" />
+  <testcase classname="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" name="Delete item by entry id" time="0.219" />
+  <testcase classname="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" name="Remove all items from both folder" time="0.078" />
+  <testcase classname="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" name="Remove annotations" time="0.578">
+   <failure type="exception" message="Failed: UnexpectedServerFault"><![CDATA[Error: Failed: UnexpectedServerFault
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:8:21
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+   <failure type="exception" message="Failed: Transaction (Process ID 124) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. (RuntimeException)"><![CDATA[Error: Failed: Transaction (Process ID 124) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. (RuntimeException)
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:10:17
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+  <testcase classname="specs\personalitem\features\folders\folders.spec.js.Personalitem &gt; Features &gt; Folders &gt; addItemsToFolder and clearFolder &gt;" name="Remove both folder" time="9.006" />
+ </testsuite>
+ <testsuite name="specs\resource\entities\contentTreeNodes.spec.js" timestamp="2016-12-16T00:01:27" hostname="localhost" time="1.074" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" timestamp="2016-12-16T00:01:27" hostname="localhost" time="1.074" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" name="ContentTreeNodes.one({$expand: &quot;Children&quot;,$top: 50)" time="0.172" />
+  <testcase classname="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" name="ContentTreeNodes.requestPath({$expand: &quot;Nodes&quot;})" time="0.14" />
+  <testcase classname="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" name="ContentTreeNodes.requestChildren({$expand: &quot;Children/Children&quot;})" time="0.137" />
+  <testcase classname="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" name="ContentTreeNodes.one({$expand: &quot;Children&quot;,$top: 50)" time="0.14" />
+  <testcase classname="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" name="ContentTreeNodes.requestPath({$expand: &quot;Nodes&quot;})" time="0.078" />
+  <testcase classname="specs\resource\entities\contentTreeNodes.spec.js.Resource &gt; Entities &gt; ContentTreeNodes" name="ContentTreeNodes.requestChildren({$expand: &quot;Children/Children&quot;})" time="0.157" />
+ </testsuite>
+ <testsuite name="specs\resource\features\document.spec.js" timestamp="2016-12-16T00:01:29" hostname="localhost" time="12.568" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " timestamp="2016-12-16T00:01:29" hostname="localhost" time="12.568" errors="0" tests="16" skipped="0" disabled="0" failures="0">
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Execute Search" time="0.361" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="search.getResult() and get document id" time="0" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Document.one() and Get Media For All documents from the executed search" time="6.956" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Document.one() with $expand=Next,Previous  and Get Media  For All documents from the executed search" time="0.509" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="GetOutboundLinks" time="0.236" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="GetRelationships" time="1.339" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="GetExtendedMetadata" time="0.376" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Document getHistory" time="0.156" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Execute Search" time="0.347" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="search.getResult() and get document id" time="0" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Document.one() and Get Media For All documents from the executed search" time="0.547" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Document.one() with $expand=Next,Previous  and Get Media  For All documents from the executed search" time="0.469" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="GetOutboundLinks" time="0.156" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="GetRelationships" time="0.328" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="GetExtendedMetadata" time="0.375" />
+  <testcase classname="specs\resource\features\document.spec.js.Resource &gt; Documents manipulations " name="Document getHistory" time="0.131" />
+ </testsuite>
+ <testsuite name="specs\ca\entities\alertDeliveryConfiguration.spec.js" timestamp="2016-12-16T00:01:41" hostname="localhost" time="0.469" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" timestamp="2016-12-16T00:01:41" hostname="localhost" time="0.469" errors="0" tests="6" skipped="5" disabled="0" failures="2">
+  <testcase classname="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" name="Create AlertDeliveryConfiguration" time="0.078">
+   <failure type="exception" message="Failed: UnexpectedServerFault"><![CDATA[Error: Failed: UnexpectedServerFault
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:8:21
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+   <failure type="exception" message="Failed: Missing or Unknown DeliveryCutOffTimeZone (GMT) (RuntimeException$$EnhancerByCGLIB$$6ae16e09)"><![CDATA[Error: Failed: Missing or Unknown DeliveryCutOffTimeZone (GMT) (RuntimeException$$EnhancerByCGLIB$$6ae16e09)
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:10:17
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+  <testcase classname="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" name="Get AlertDeliveryConfigurations" time="0">
+   <skipped message="test skipped because &quot;Create AlertDeliveryConfiguration&quot; failed" />
+  </testcase>
+  <testcase classname="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" name="Get AlertDeliveryConfiguration" time="0">
+   <skipped message="test skipped because &quot;Create AlertDeliveryConfiguration&quot; failed" />
+  </testcase>
+  <testcase classname="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" name="Delete AlertDeliveryConfigurations" time="0">
+   <skipped message="test skipped because &quot;Create AlertDeliveryConfiguration&quot; failed" />
+  </testcase>
+  <testcase classname="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" name="Get AlertDeliveryConfigurations after deleting" time="0">
+   <skipped message="test skipped because &quot;Create AlertDeliveryConfiguration&quot; failed" />
+  </testcase>
+  <testcase classname="specs\ca\entities\alertDeliveryConfiguration.spec.js.Delivery Configuration CRUD operation Verification" name="Get AlertDeliveryConfiguration after deleting" time="0">
+   <skipped message="test skipped because &quot;Create AlertDeliveryConfiguration&quot; failed" />
+  </testcase>
+ </testsuite>
+ <testsuite name="specs\ca\features\alerts.spec.js" timestamp="2016-12-16T00:01:42" hostname="localhost" time="1.099" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" timestamp="2016-12-16T00:01:42" hostname="localhost" time="1.099" errors="0" tests="22" skipped="15" disabled="0" failures="6">
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Remove all alerts(if exists)" time="0.078" />
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Execute Search and get search id" time="0.347" />
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="search.getResult() and get documents id" time="0" />
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Save Search and get saved search id" time="0.158" />
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Add alert for Search" time="0.094">
+   <failure type="exception" message="Failed: UnexpectedServerFault"><![CDATA[Error: Failed: UnexpectedServerFault
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:8:21
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+   <failure type="exception" message="Failed: Unable to instantiate chain GenerateAlertQueryChain (IllegalArgumentException)"><![CDATA[Error: Failed: Unable to instantiate chain GenerateAlertQueryChain (IllegalArgumentException)
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:10:17
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Get created Alert" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Get Alerts" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Delete created Alerts" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Check that Alert Deleted" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Add alert for Document" time="0.078">
+   <failure type="exception" message="Failed: UnexpectedServerFault"><![CDATA[Error: Failed: UnexpectedServerFault
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:8:21
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+   <failure type="exception" message="Failed: Unable to instantiate chain GenerateDocumentAlertQueryChain (IllegalArgumentException)"><![CDATA[Error: Failed: Unable to instantiate chain GenerateDocumentAlertQueryChain (IllegalArgumentException)
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:10:17
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Get created Alert" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Get Alerts" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Create AlertDeliveryConfiguration" time="0.078">
+   <failure type="exception" message="Failed: UnexpectedServerFault"><![CDATA[Error: Failed: UnexpectedServerFault
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:8:21
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+   <failure type="exception" message="Failed: Missing or Unknown DeliveryCutOffTimeZone (GMT) (RuntimeException$$EnhancerByCGLIB$$6ae16e09)"><![CDATA[Error: Failed: Missing or Unknown DeliveryCutOffTimeZone (GMT) (RuntimeException$$EnhancerByCGLIB$$6ae16e09)
+    at stack (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.Env.expectationResultFactory (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Env.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:987:25)
+    at jasmineInterface.fail (D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:3423:23)
+    at D:\M2GA-MO2-JOB1\node_modules\wk-ots-core\helpers\errorsHelper.js:10:17
+    at process._tickCallback (node.js:369:9)]]>
+   </failure>
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name=".setDefaultAlertConfiguration()" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Check that DefaultAlertConfiguration set correctly" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="AddConfigurationToAlert()" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Clear default AlertDeliveryConfiguration" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Check that AlertDeliveryConfiguration cleared" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="RemoveConfigurationFromAlert()" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Delete AlertDeliveryConfigurations" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Delete created Alerts" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+  <testcase classname="specs\ca\features\alerts.spec.js.CA &gt; Features &gt; Alerts" name="Check that Alert Deleted" time="0">
+   <skipped message="test skipped because some of the previous init tests failed" />
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,154 @@
+doctype html(lang='en')
+head
+    // start: Meta
+    meta(charset='utf-8')
+
+    title OSA-test-suite Report
+
+    meta(name='description', content='Bootstrap Metro Dashboard')
+
+    meta(name='keyword', content='Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    // end: Meta
+    // start: Mobile Specific
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // end: Mobile Specific
+    // start: CSS
+    link#bootstrap-style(href='../template/css/bootstrap.min.css', rel='stylesheet')
+
+    link(href='../template/css/bootstrap-responsive.min.css', rel='stylesheet')
+
+    link#base-style(href='../template/css/style.css', rel='stylesheet')
+
+    link#base-style-responsive(href='../template/css/style-responsive.css', rel='stylesheet')
+
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext', rel='stylesheet', type='text/css')
+    // end: CSS
+    // The HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+      | &#x9;&#x9;
+      link#ie-style(href='../template/css/ie.css', rel='stylesheet')
+    //if IE 9
+      link#ie9style(href='../template/css/ie9.css', rel='stylesheet')
+    // start: Favicon
+    link(rel='shortcut icon', href='img/favicon.ico')
+    // end: Favicon
+body
+    .container-fluid-full
+        .row-fluid
+            // start: Main Menu
+            #sidebar-left.span2
+                .nav-collapse.sidebar-nav
+                    .imglogo
+                        img(src='../template/img/logo.png')
+                    ul.nav.nav-tabs.nav-stacked.main-menu
+                        li
+                            a(href='index.html')
+                                i.icon-bar-chart
+                                span.hidden-tablet  Dashboard
+                        li
+                            a(href='tables.html')
+                                i.icon-align-justify
+                                span.hidden-tablet  Data Tables
+            // end: Main Menu
+            noscript
+                .alert.alert-block.span10
+                    h4.alert-heading Warning!
+
+                    p
+                        | You need to have
+                        a(href='http://en.wikipedia.org/wiki/JavaScript', target='_blank') JavaScript
+                        |  enabled to use this site.
+            // start: Content
+            #content.span10
+                ul.breadcrumb
+                    li
+                        i.icon-home
+                        a(href='index.html') Home
+
+
+                .row-fluid
+                    .span3.statbox.blue(ontablet='span6', ondesktop='span3')
+                        .boxchart 5,6,7,2,0,4,2,4,8,2,3,3,2
+
+                        .number
+                            | #{count}
+                            i.icon-arrow-up
+                        .title tests
+                        .footer
+                            a(href='tables.html') read full report
+                .row-fluid.hideInIE8.circleStats
+                    .span3(ontablet='span4', ondesktop='span3')
+                        .circleStatsItemBox.red
+                            .header Failed test
+                            span.percent percent
+                            .circleStat
+                                input.whiteCircle(type='text', value=''+failedTest)
+                            .footer
+                                span.count
+                                    span.number #{failed}
+                                    span.unit
+                                span.sep  /
+                                span.value
+                                    span.number #{count}
+                                    span.unit
+                    .span3(ontablet='span4', ondesktop='span3')
+                        .circleStatsItemBox.yellow
+                            .header Skipped test
+                            span.percent percent
+                            .circleStat
+                                input.whiteCircle(type='text', value=''+skippedTest)
+                            .footer
+                                span.count
+                                    span.number #{skipped}
+                                    span.unit
+                                span.sep  /
+                                span.value
+                                    span.number #{count}
+                                    span.unit
+                    .span3(ontablet='span4', ondesktop='span3')
+                        .circleStatsItemBox.greenDark
+                            .header Passed test
+                            span.percent percent
+                            .circleStat
+                                input.whiteCircle(type='text', value=''+passedTest)
+                            .footer
+                                span.count
+                                    span.number #{passed}
+                                    span.unit
+                                span.sep  /
+                                span.value
+                                    span.number #{count}
+                                    span.unit
+                    // start: JavaScript
+                    script(src='../template/js/jquery-1.9.1.min.js')
+                    script(src='../template/js/jquery-migrate-1.0.0.min.js')
+                    script(src='../template/js/jquery-ui-1.10.0.custom.min.js')
+                    script(src='../template/js/jquery.ui.touch-punch.js')
+                    script(src='../template/js/modernizr.js')
+                    script(src='../template/js/bootstrap.min.js')
+                    script(src='../template/js/jquery.cookie.js')
+                    script(src='../template/js/fullcalendar.min.js')
+                    script(src='../template/js/jquery.dataTables.min.js')
+                    script(src='../template/js/excanvas.js')
+                    script(src='../template/js/jquery.flot.js')
+                    script(src='../template/js/jquery.flot.pie.js')
+                    script(src='../template/js/jquery.flot.stack.js')
+                    script(src='../template/js/jquery.flot.resize.min.js')
+                    script(src='../template/js/jquery.chosen.min.js')
+                    script(src='../template/js/jquery.uniform.min.js')
+                    script(src='../template/js/jquery.cleditor.min.js')
+                    script(src='../template/js/jquery.noty.js')
+                    script(src='../template/js/jquery.elfinder.min.js')
+                    script(src='../template/js/jquery.raty.min.js')
+                    script(src='../template/js/jquery.iphone.toggle.js')
+                    script(src='../template/js/jquery.uploadify-3.1.min.js')
+                    script(src='../template/js/jquery.gritter.min.js')
+                    script(src='../template/js/jquery.imagesloaded.js')
+                    script(src='../template/js/jquery.masonry.min.js')
+                    script(src='../template/js/jquery.knob.modified.js')
+                    script(src='../template/js/jquery.sparkline.min.js')
+                    script(src='../template/js/counter.js')
+                    script(src='../template/js/retina.js')
+                    script(src='../template/js/custom.js')
+                    // end: JavaScript
